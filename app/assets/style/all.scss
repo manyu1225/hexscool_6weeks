@@ -1,15 +1,19 @@
+// Font
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap');
+// Vender
+@import "vender/_bootstrap.scss";
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap');
+// Base
+@import "utils/_reboot.scss";
+// Utils
 
-@import "util/_variable.scss";
-@import "util/_reset.scss";
-@import "layout/_gloabl.scss"; //全站式樣式
-@import "util/_mixin.scss"; 
+@import "utils/_variables.scss";
+@import "utils/_helper.scss";
+@import "utils/_mixin.scss"; 
+@import "utils/_utilities.scss"; //工具性-通用類別樣式
 @import "layout/_layout.scss";//容器樣式
-@import "util/_utilities.scss"; //工具性-通用類別樣式
-
+// Page
 @import "page/_main.scss";
 
 
-
+// Components
