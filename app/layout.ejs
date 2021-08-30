@@ -15,40 +15,17 @@
 </head>
 
 <body>
-  <header class="navbar  ">
-    <div class="container">
-      <h1 class="">
-        <a href="index.html" class="">EXHIBINECTION</a>
-      </h1>
-      <div>
-        <ul class="">
-          <li class="">
-            <a class="" href="#">Sign in</a>
-          </li>
-          <li class="">
-            <a class="" href="#">Sign up</a>
-          </li>
-          <li class="">
-            <a class="" href="#">
-              <span>
-                confirmation_number
-              </span>
-              <span>1</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </header>
 
-  <%- contents %>
+  <%- include('header.ejs') %>
 
-    <footer class="footer">
-      footer
-    </footer>
+    <%- contents %>
 
-    <script src="./assets/js/vendors.js"></script>
-    <script src="./assets/js/all.js"></script>
+      <footer class="footer">
+        footer
+      </footer>
+
+      <script src="./assets/js/vendors.js"></script>
+      <script src="./assets/js/all.js"></script>
 </body>
 
 </html>

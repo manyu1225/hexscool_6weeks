@@ -1,19 +1,17 @@
 // Font
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap');
 // Vender
-@import "vender/_bootstrap.scss";
+@import "./vender/_bootstrap";
 
 // Base
-@import "utils/_reboot.scss";
-// Utils
-
-@import "utils/_variables.scss";
-@import "utils/_helper.scss";
-@import "utils/_mixin.scss"; 
-@import "utils/_utilities.scss"; //工具性-通用類別樣式
-@import "layout/_layout.scss";//容器樣式
-// Page
-@import "page/_main.scss";
-
-
+@import "./helpers/_reboot";
+@import "./helpers/_variables";
+@import "./helpers/_helper";
+@import "./helpers/_mixin"; 
+@import "./helpers/_util"; //工具性-通用類別樣式
 // Components
+@import "./layout/_header";
+// Page
+@import "./page/_index";
+
+
