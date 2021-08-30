@@ -1,0 +1,16 @@
+.menuNav{
+    flex-wrap: nowrap;
+    white-space:nowrap;
+    cursor: grab;
+    .nav-item{
+      padding-bottom: 1px;
+      &:hover{
+        padding-bottom: 0;
+        border-bottom: 1px solid $primary-light;
+      }
+    }
+    .active{
+      padding-bottom: 0;
+      border-bottom: 1px solid $primary-light;
+    }
+  }

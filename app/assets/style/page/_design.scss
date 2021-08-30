@@ -1,0 +1,16 @@
+.design{
+    li{
+      padding-top: 44px;
+      padding-bottom: 44px;
+      @include media-breakpoint-up(sm) { 
+        padding-bottom: 52px;
+        padding-top: $spacer*5;
+      }
+    }
+    img{
+      height: 221px;
+      @include media-breakpoint-up(sm) { 
+        height: 285px;
+      }
+    }
+  }
