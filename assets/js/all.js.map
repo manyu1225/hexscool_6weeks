@@ -1,0 +1,1 @@
+{"version":3,"sources":["all.js"],"names":["$","document","ready","event","console","log"],"mappings":";;AACAA,CAAC,CAACC,QAAD,CAAD,CAAYC,KAAZ,CAAkB,UAAUC,KAAV,EAAiB;AAC/BC,EAAAA,OAAO,CAACC,GAAR,CAAY,QAAZ;AACH,CAFD","file":"all.js","sourcesContent":["\r\n$(document).ready(function (event) {\r\n    console.log('Hello!');\r\n})"]}
