@@ -67,21 +67,22 @@ $colors: (
 // scss-docs-end colors-map
 
 // scss-docs-start theme-color-variables
-$primary:       #630834;// $blue !default;
+$primary:       #630834; // $blue !default;
 $primary-light: #E31277;
 $primary-dark: #190014CC;
 $secondary:     #707070;// $gray-600 !default;
-$success:       $green !default;
-$info:          $cyan !default;
+$success:      #E31277!default;
+$info:          #EFEFEF !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
 $light:         $gray-100 !default;
 $dark:          $gray-900 !default;
+$white:         #fff;
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
 $theme-colors: (
-  "primary":    #630834,
+  "primary":   $primary,
   "primary-dark":     #190014CC,
   "primary-light":    #E31277,
   "secondary":  #707070, //$secondary,
@@ -1469,7 +1470,7 @@ $offcanvas-padding-y:               $modal-inner-padding !default;
 $offcanvas-padding-x:               $modal-inner-padding !default;
 $offcanvas-horizontal-width:        400px !default;
 $offcanvas-vertical-height:         30vh !default;
-$offcanvas-transition-duration:     .5s; // .3s !default;
+$offcanvas-transition-duration:     .3s !default;
 $offcanvas-border-color:            $modal-content-border-color !default;
 $offcanvas-border-width:            $modal-content-border-width !default;
 $offcanvas-title-line-height:       $modal-title-line-height !default;

@@ -5,12 +5,12 @@
 
 // Base
 @import "./helpers/_reboot";
-@import "./helpers/_variables";
+
 @import "./helpers/_helper";
-@import "./helpers/_mixin"; 
-@import "./helpers/_util"; //工具性-通用類別樣式
+
 // Components
-@import "./layout/_header";
+@import "./helpers/_img";
+@import "./layout/_banner";
 // Page
 @import "./page/_index";
 
