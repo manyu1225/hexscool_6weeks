@@ -1,0 +1,482 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./assets/style/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+        if (false)
+            document.write('<iframe name="left" src="left.html" scrolling="yes"></iframe>');
+    </script>
+</head>
+
+<body>
+    <form name="mform" method="post" action="" id="mform" enctype='multipart/form-data'>
+
+        <section class="main">
+            <!-- 麵包屑-->
+            <ul class="breadcrumb">
+                <li><a href="#">元大e櫃檯</a></li>
+                <li>振興五倍券回饋金額查詢</li>
+            </ul>
+            <div class="in">
+                <h2>
+                    <span>振興五倍券回饋金額查詢</span>
+                </h2>
+                <!-- 第一段-->
+                <!-- <div>
+                    <h3 class="margin-primary">綁定資訊</h3>
+
+                    <table class="container border-collapse-spacing mb-2 ">
+                        <tbody>
+                            <tr class="d-md-flex flex-md-wrap ">
+                                <th class="p-primary width-start text-start pd-md-2">綁定支付工具</th>
+                                <td class="text-md-end width-end " colspan="3">信用卡</td>
+                            </tr>
+                            <tr class="d-md-flex  flex-md-wrap">
+                                <div class="width-half">
+                                    <th class="p-primary width-start text-start pd-md-2">回饋方式</th>
+                                    <td class="width-end text-md-end">信用卡帳單折抵</td>
+                                </div>
+                                <div class="width-half">
+                                    <th class="p-primary width-start text-start pd-md-2">共同綁定戶數</th>
+                                    <td class="width-end text-md-end">5(含本人)</td>
+                                </div>
+                            </tr>
+                            <tr class="d-md-flex flex-md-wrap ">
+                                <div class="width-half">
+                                    <th class="p-primary width-start text-start pd-md-2">綁定時間</th>
+                                    <td class="width-end text-md-end">2021/09/22 17:00</td>
+                                </div>
+                                <div class="width-half">
+                                    <th class="p-primary width-start text-start pd-md-2">優惠代碼</th>
+                                    <td class="width-end text-md-end">XXX</td>
+                                </div>
+                            </tr>
+                            </thead>
+                    </table>
+                </div>-->
+
+                <!-- 第二段-->
+                <!--<div>
+                    <h3 class="margin-primary">回饋金額</h3>
+                    <div>
+                        <table class="container max-width d-block posotion-relative mt-2 mb-3">
+                            <thead class="d-flex flex-direction-column">
+                                <tr
+                                    class="bg-primary d-flex d-block flex-direction-column posotion-relative border-collapse-spacing">
+                                    <th class="bg-primary border-none fs-l text-start p-primary">振興券</th>
+                                </tr>
+                                <tr class="posotion-relative d-flex flex-direction-column border-collapse-spacing">
+                                    <td class="d-flex justify-content-between">
+                                        <span class="text-start text-dark">可回饋金額</span>
+                                        <span class="text-end text-dark">3,113元</span>
+                                    </td>
+                                </tr>
+                                <tr class="posotion-relative d-flex flex-direction-column border-collapse-spacing">
+                                    <td class="d-flex justify-content-between">
+                                        <span class="text-start text-dark">已回饋金額</span>
+                                        <span class="text-end text-dark">3,333元</span>
+                                    </td>
+                                </tr>
+                                <tr class="posotion-relative d-flex flex-direction-column border-collapse-spacing">
+                                    <td class="d-flex justify-content-between">
+                                        <span class="text-start text-dark">剩餘回饋金額</span>
+                                        <span class="text-end text-primary fw-primary">3,243元</span>
+                                    </td>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                    <div>
+                        <table class="container max-width d-block posotion-relative mt-2 mb-3">
+                            <thead class="d-flex flex-direction-column">
+                                <tr class="bg-primary d-flex d-block flex-direction-column posotion-relative ">
+                                    <th class="bg-primary border-none fs-l text-start p-primary">振興好食券</th>
+                                </tr>
+                                <tr class="posotion-relative d-flex flex-direction-column  border-collapse-spacing">
+                                    <td class="d-flex justify-content-between">
+                                        <span class="text-start text-dark">可回饋金額</span>
+                                        <span class="text-end text-dark ">3,113元</span>
+                                    </td>
+                                </tr>
+                                <tr class="posotion-relative d-flex flex-direction-column border-collapse-spacing">
+                                    <td class="d-flex justify-content-between">
+                                        <span class="text-start text-dark">已回饋金額</span>
+                                        <span class="text-end text-dark">3,333元</span>
+                                    </td>
+                                </tr>
+                                <tr class="posotion-relative d-flex flex-direction-column border-collapse-spacing">
+                                    <td class="d-flex justify-content-between">
+                                        <span class="text-start text-dark">剩餘回饋金額</span>
+                                        <span class="text-end text-primary fw-primary">3,933元</span>
+                                    </td>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                </div>-->
+                <!-- 第3段 -->
+                <div>
+                    <h3 class="margin-primary">回饋金額明細</h3>
+                    <div>
+                        <table class="container">
+                            <tr>
+                                <td class="text-center">尚無回饋金額明細，如有疑問請來電客服(02)2182-1968查詢</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <!-- 第3段  m_show d-none-->
+                    <div class="card d-md-block">
+                        <table class="container mt-2 mb-3 border-md-primary rounded-md-circle">
+                            <thead id="card-head" class="d-md-flex flex-direction-column rounded-md-circle">
+                                <tr class="card-title">
+                                    <th class="p-md-primary">
+                                        <span class="text-md-dark">連家#LATIV米格</span>
+                                        <span class="text-md-secondary">TWD</span>
+                                    </th>
+                                </tr>
+                                <tr class="card-title">
+                                    <th class="p-md-secondary">
+                                        <span class="text-md-secondary">08/09</span>
+                                        <span class="text-md-primary fw-md-primary">+1,170</span>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody id="card-row" class="card-body d-md-none flex-direction-column">
+                                <tr class="card-row">
+                                    <td>
+                                        <span class="card-start ">消費明細</span>
+                                        <span class="card-end">3,113元</span>
+                                    </td>
+                                </tr>
+                                <tr class="card-row">
+                                    <td>
+                                        <span class="card-start ">消費日期</span>
+                                        <span class="card-end ">3,333元</span>
+                                    </td>
+                                </tr>
+                                <tr class="card-row">
+                                    <td>
+                                        <span class="card-start ">入帳日期</span>
+                                        <span class="card-end">3,243元</span>
+                                    </td>
+                                </tr>
+                                <tr class="card-row">
+                                    <td>
+                                        <span class="card-start">卡號/帳號</span>
+                                        <span class="card-end">3,243元</span>
+                                    </td>
+                                </tr>
+                                <tr class="card-row">
+                                    <td>
+                                        <span class="card-start">交易金額</span>
+                                        <span class="card-end">3,243元</span>
+                                    </td>
+                                </tr>
+                                <tr class="card-row">
+                                    <td>
+                                        <span class="card-start">已回饋金額</span>
+                                        <span class="card-end">3,243元</span>
+                                    </td>
+                                </tr>
+                                <tr class="card-row mb-md-2">
+                                    <td>
+                                        <span class="card-start">備註</span>
+                                        <span class="card-end ">3,243元</span>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="card d-md-block">
+                        <table class="container mt-2 mb-3 border-md-primary rounded-md-circle">
+                            <thead class="d-md-flex flex-direction-column rounded-md-circle">
+                                <tr class="card-title">
+                                    <th class="p-md-primary">
+                                        <span class="text-md-dark">連家#LATIV米格</span>
+                                        <span class="text-md-secondary">TWD</span>
+                                    </th>
+                                </tr>
+                                <tr class="card-title">
+                                    <th class="p-md-secondary">
+                                        <span class="text-md-secondary">08/09</span>
+                                        <span class="text-md-primary fw-md-primary">+1,170</span>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody class="card-body d-md-none flex-direction-column">
+                                <tr class="card-row">
+                                    <td>
+                                        <span class="card-start ">消費明細</span>
+                                        <span class="card-end">3,113元</span>
+                                    </td>
+                                </tr>
+                                <tr class="card-row">
+                                    <td>
+                                        <span class="card-start ">消費日期</span>
+                                        <span class="card-end ">3,333元</span>
+                                    </td>
+                                </tr>
+                                <tr class="card-row">
+                                    <td>
+                                        <span class="card-start ">入帳日期</span>
+                                        <span class="card-end">3,243元</span>
+                                    </td>
+                                </tr>
+                                <tr class="card-row">
+                                    <td>
+                                        <span class="card-start">卡號/帳號</span>
+                                        <span class="card-end">3,243元</span>
+                                    </td>
+                                </tr>
+                                <tr class="card-row">
+                                    <td>
+                                        <span class="card-start">交易金額</span>
+                                        <span class="card-end">3,243元</span>
+                                    </td>
+                                </tr>
+                                <tr class="card-row">
+                                    <td>
+                                        <span class="card-start">已回饋金額</span>
+                                        <span class="card-end">3,243元</span>
+                                    </td>
+                                </tr>
+                                <tr class="card-row mb-md-2">
+                                    <td>
+                                        <span class="card-start">備註</span>
+                                        <span class="card-end ">3,243元</span>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="card d-md-block">
+                        <table class="container mt-2 mb-3 border-md-primary rounded-md-circle">
+                            <thead class="d-md-flex flex-direction-column rounded-md-circle">
+                                <tr class="card-title">
+                                    <th class="p-md-primary">
+                                        <span class="text-md-dark">連家#LATIV米格</span>
+                                        <span class="text-md-secondary">TWD</span>
+                                    </th>
+                                </tr>
+                                <tr class="card-title">
+                                    <th class="p-md-secondary">
+                                        <span class="text-md-secondary">08/09</span>
+                                        <span class="text-md-primary fw-md-primary">+1,170</span>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody class="card-body d-md-none flex-direction-column">
+                                <tr class="card-row">
+                                    <td>
+                                        <span class="card-start ">消費明細</span>
+                                        <span class="card-end">3,113元</span>
+                                    </td>
+                                </tr>
+                                <tr class="card-row">
+                                    <td>
+                                        <span class="card-start ">消費日期</span>
+                                        <span class="card-end ">3,333元</span>
+                                    </td>
+                                </tr>
+                                <tr class="card-row">
+                                    <td>
+                                        <span class="card-start ">入帳日期</span>
+                                        <span class="card-end">3,243元</span>
+                                    </td>
+                                </tr>
+                                <tr class="card-row">
+                                    <td>
+                                        <span class="card-start">卡號/帳號</span>
+                                        <span class="card-end">3,243元</span>
+                                    </td>
+                                </tr>
+                                <tr class="card-row">
+                                    <td>
+                                        <span class="card-start">交易金額</span>
+                                        <span class="card-end">3,243元</span>
+                                    </td>
+                                </tr>
+                                <tr class="card-row">
+                                    <td>
+                                        <span class="card-start">已回饋金額</span>
+                                        <span class="card-end">3,243元</span>
+                                    </td>
+                                </tr>
+                                <tr class="card-row mb-md-2">
+                                    <td>
+                                        <span class="card-start">備註</span>
+                                        <span class="card-end ">3,243元</span>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="card d-md-block">
+                        <div class="container mt-2 mb-3 border-md-primary rounded-md-circle">
+                            <div id="card-head2" class="card-body d-md-flex flex-direction-column rounded-md-circle">
+                                <ul class="card-title">
+                                    <li class="p-md-primary">
+                                        <span class="text-md-dark">連家#LATIV米格</span>
+                                        <span class="text-md-secondary">TWD</span>
+                                    </li>
+                                </ul>
+                                <ul class="card-title">
+                                    <li class="p-md-secondary">
+                                        <span class="text-md-secondary">08/09</span>
+                                        <span class="text-md-primary fw-md-primary">+1,170</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="card-row2" class="d-md-none flex-direction-column">
+                                <ul class="card-row">
+                                    <li>
+                                        <span class="card-start ">消費明細</span>
+                                        <span class="card-end">3,113元</span>
+                                    </li>
+                                </ul>
+                                <ul class="card-row">
+                                    <li>
+                                        <span class="card-start ">消費日期</span>
+                                        <span class="card-end ">3,333元</span>
+                                    </li>
+                                </ul>
+                                <ul class="card-row">
+                                    <li>
+                                        <span class="card-start ">入帳日期</span>
+                                        <span class="card-end">3,243元</span>
+                                    </li>
+                                </ul>
+                                <ul class="card-row">
+                                    <li>
+                                        <span class="card-start">卡號/帳號</span>
+                                        <span class="card-end">3,243元</span>
+                                    </li>
+                                </ul>
+                                <ul class="card-row">
+                                    <li>
+                                        <span class="card-start">交易金額</span>
+                                        <span class="card-end">3,243元</span>
+                                    </li>
+                                </ul>
+                                <ul class="card-row">
+                                    <li>
+                                        <span class="card-start">已回饋金額</span>
+                                        <span class="card-end">3,243元</span>
+                                    </li>
+                                </ul>
+                                <ul class="card-row mb-md-2">
+                                    <li>
+                                        <span class="card-start">備註</span>
+                                        <span class="card-end ">3,243元</span>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 第4段- m_hide .d-block------->
+                    <div class="feedbackdtl d-md-none">
+                        <table class="container border-collapse-spacing d-block posotion-relative mt-2 mb-3">
+                            <thead class="d-flex flex-direction-column">
+                                <tr role="row" class="d-flex d-block bg-primary">
+                                    <th>
+                                        <div>消費日</div>
+                                    </th>
+                                    <th>
+                                        <div>入帳日</div>
+                                    </th>
+                                    <th>
+                                        <div>卡號/帳號</div>
+                                    </th>
+                                    <th>
+                                        <div>消費明細</div>
+                                    </th>
+                                    <th>
+                                        <div>交易金額</div>
+                                    </th>
+                                    <th>
+                                        <div>已回饋金額</div>
+                                    </th>
+                                    <th>
+                                        <div>備註</div>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody class="d-flex flex-direction-column">
+                                <tr>
+                                    <td>
+                                        2021/09/06</td>
+                                    <td>
+                                        2021/09/06</td>
+                                    <td>
+                                        4565
+                                    </td>
+                                    <td>
+                                        哈囉你好2717你好27你好27你好2700700 </td>
+                                    <td>
+                                        920097元</td>
+                                    <td>
+                                        9020097元</td>
+                                    <td>
+                                        14:09:57</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        2021/09/02</td>
+                                    <td>
+                                        2021/09/03</td>
+                                    <td>
+                                        4565
+                                    </td>
+                                    <td>
+                                        7800
+                                        21700700 </td>
+                                    <td>
+                                        9454540207元</td>
+                                    <td>
+                                        90207元</td>
+                                    <td>
+                                        14:09:57</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        2021/09/02</td>
+                                    <td>
+                                        2021/09/03</td>
+                                    <td>
+                                        4565
+                                    </td>
+                                    <td>
+                                        7800
+                                        21700700 </td>
+                                    <td>
+                                        9454540207元</td>
+                                    <td>
+                                        90207元</td>
+                                    <td>
+                                        14:09:57</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div><!-- 第4段 -->
+                </div><!-- 第3段 -->
+            </div><!-- in -->
+        </section>
+    </form>
+    <script>
+        $('.card').click(function () {
+            $(this).find('.card-body').toggleClass('d-md-flex');
+        });
+    </script>
+</body>
+
+</html>

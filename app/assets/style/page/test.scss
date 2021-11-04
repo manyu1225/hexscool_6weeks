@@ -1,0 +1,192 @@
+
+.container{ margin: 0 auto ; width: 100%;}
+
+.align-middle{align-items: center; }
+.align-content-between{ align-content: space-between; }
+
+.bg-primary{background-color: rgba(120,161,206,1)!important ;}
+.bg-secondary{background-color: #f8f8f8; }
+.border-none{border: none}
+.border-primary{ border: solid 1px #80808070;}
+.border-collapse-spacing{ border-collapse: collapse; border-spacing :0px} 
+
+
+.d-flex{display:flex;}
+.d-block{display: block;}
+.d-none{display:none;}
+.d-md-none{display: block;}
+.d-md-block{display: none;}
+
+
+.max-width{ max-width: 960px;}
+.margin-primary{margin: 45px auto 0px;}
+
+.mb-0 {margin-bottom: 0;}
+
+.mb-1 {margin-bottom:5px}
+.mb-2 {margin-bottom: 10px;}
+.mb-3{margin-bottom:15px}
+.mb-4 {margin-bottom: 20px;}
+.mb-5 {margin-bottom: 25px;}
+
+.mt-1{ margin-top: 5px;}
+.mt-2{ margin-top: 10px;}
+
+.fs-l{font-size: large;}
+.fs-2{font-size: 0.88em;}
+.fs-3{font-size: 0.9em;}
+.fw-primary{font-weight: 525;}
+.fw-bold{font-weight: bold;}
+.flex-direction-column{flex-direction: column;}
+
+.p-0{padding:0px}
+.p-1{padding:10px}
+.p-primary{padding: 10px 10px 7px 10px;}
+
+.pt-1{padding-top:5px}
+.pr-1{padding-right:5px}
+.pr-2{padding-right:10px}
+.pb-2{padding-bottom: 10px}
+.pl-1{padding-left:5px}
+.pl-2{padding-left:10px}
+
+.posotion-relative{position: relative;}
+
+.lh-base{line-height: 1.0em;}
+
+.justify-content-between{ justify-content: space-between ;}
+
+.width-start{width:300px}
+.width-end{width:500px}
+
+.width-3{width:200px}
+.width-4{width:150px}
+
+.width-half{width:50%}
+.width-base{width:960px;}
+
+ //文字斷行
+.text-break {word-wrap: break-word}
+
+.text-dark{ color:black;} 
+.text-primary{ color: #0081cc;} 
+.text-secondary{ color:#80808070 ;}
+.text-center{text-align: center;}
+.text-start{text-align: left}
+.text-end{text-align: right}
+
+.rounded-circle{ border-radius: 15px;}
+
+.feedbackdtl table{
+    table-layout:fixed;
+    /*word-break:break-all;*/
+    thead th{
+        padding:10px;
+        font-size: 0.88em;
+        width:150px;
+        border: none;
+        text-align: center;
+    }
+    tbody td{
+        padding:10px;
+        font-size: 0.9em;
+        line-height: 1.0em;
+        text-align: center;
+        width:150px;
+        border: none;
+    }
+
+}
+
+
+ 
+/*mobile md*/
+@media screen and (max-width: 767px){
+    .border-md-primary{ border: solid 1px #80808070;}
+
+    .d-md-block{display: block;}
+    .d-md-none{display: none;}
+    .d-md-flex{display: flex;}
+  
+    #card-row.active {display: flex;}
+
+        
+    .width-start{width: 35%;}
+    .width-end{width: 65%;}
+
+    .pd-md-1{padding: 5px;}
+    .pd-md-2{padding: 10px;}
+    
+    .p-md-secondary{padding: 0px 10px 0px 10px;}
+    .p-md-primary{padding: 5px 10px 0px 10px;}
+   
+    .text-md-start{text-align: left}
+    .text-md-end{text-align: right}
+    .text-md-primary{ color: #0081cc;} 
+    .text-md-secondary{ color:#80808070 ;}
+    .text-md-dark{ color:black;} 
+    .flex-md-wrap{flex-wrap: wrap}
+    .fw-md-bold{font-weight: bold;}
+    .fw-md-primary{font-weight: 525;}
+    .fs-md-l{font-size: large;}
+    
+    .rounded-md-circle{ border-radius: 15px;}
+    
+    .justify-content-md-between{ justify-content: space-between ;}
+    .flex-direction-md-column{flex-direction: column;}
+    .mb-md-2{margin-bottom: 10px;}
+    
+    .card-title{
+        background-color: #fff !important;
+        border-collapse: collapse; 
+        border-spacing :0px;
+        border-radius: 15px;
+        th{
+            background-color: #fff !important;
+            display: flex;
+            justify-content: space-between ;
+            border: none;
+            font-size: large;
+            border-radius: 15px;
+
+        }
+
+     }
+    /* flex-direction: column;
+     display: flex display: none flex*/
+    .card-row{
+        border-collapse: collapse; 
+        border-spacing :0px;
+        td{
+            display: flex;
+            justify-content: space-between ;
+            padding: 0;
+            background-color: white;
+        }
+    }
+
+    .card-start{
+
+        background-color:rgba(120,161,206,1)!important ;
+        width: 40%;
+        color:white;
+        text-align: left;
+        padding:5px 0 0 10px;
+        margin-left:10px;
+    }
+    .card-end{
+       
+        text-align: right;
+        color: black;
+        font-weight: 525;
+        margin-right:10px;
+        background-color: #f8f8f8;
+    }
+     
+    
+        /*    text-shadow: 0 1px 0 rgb(204 204 204 / 70%);**/
+        
+        
+    }
+    
+        
