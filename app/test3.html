@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script>
+        /*
+                const cors = ''; //'https://cors-anywhere.herokuapp.com/';
+                const url = 'http://localhost:8765/YT_mybank/fido.do'; // origin api url
+                const headers = {
+                    withCredentials: false, // default
+                    'Access-Control-Allow-Headers': '*',
+                };
+        
+                axios.post(`${cors}${url}`,
+                    {
+                        contentType: 'text/plain',//'application/json;charset=utf-8',
+                        Headers: {
+                            'Access-Control-Allow-Origin': '*'
+                            , 'Access-Control-Allow-Methods': '*'
+                            // , 'Authorization': 'Bearer'
+                        }
+        
+                    }).then(function (response) {
+                        const msg = response.data;
+                        document.body.innerHTML = JSON.stringify(msg);
+                        console.log(response);
+                    }).catch(function (error) {
+                        // handle error
+                        console.log(error);
+                    })
+                    .then(function () {
+                        // always executed
+                    });
+        
+        */
+    </script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+
+<body onload="StartConn();" onunload="disconnect();">
+    <script>   //onload connect(); onunload= disconnect()</script>
+    <h3 id="statusOutput">DD</h3>
+    <textarea id="text22" rows="3" cols="20">
+        我是CONSUMER。
+    </textarea>
+    <input type="submit" id="sendMessage" value="新品上市  即時發怖" onclick="sendMessage();" />
+    <script>
+        //创建多个websock连接
+        function StartConn() {
+            //这里创建5个连接
+            for (var t = 1; t <= 5; t++) {
+                connect(t);
+            }
+        }
+        var webSocket = [];
+
+
+        var MyPoint = "/SocketServer";
+        var host = window.location.host;
+        var path = window.location.pathname;
+        var webCtx = path.substring(0, path.indexOf('/', 1));
+        var endPointURL = "ws://" + window.location.host + webCtx + MyPoint;
+
+        //创建socket连接功能函数  
+        var statusOutput = document.getElementById("statusOutput");
+
+
+        function connect(wsobj) {
+            endPointURL = "ws://localhost:8087/YT_mybank/SocketServer/" + wsobj;
+            console.log(endPointURL);
+            // 建立 websocket 物件
+            webSocket[wsobj] = new WebSocket(endPointURL);
+            webSocket[wsobj].onopen = function (event) {
+
+                updateStatus("WebSocket 成功連線");
+            };
+            //接收到訊息的回撥方法 從伺服器接收訊息
+            webSocket[wsobj].onmessage = function (event) {
+                updateStatus(event.data);
+            };
+            webSocket[wsobj].onclose = function (event) {
+                updateStatus("WebSocket 已離線");
+            };
+        }
+
+
+        function disconnect() {
+            webSocket.close();//關閉連線
+        }
+        function updateStatus(newStatus) {
+            statusOutput.innerHTML = newStatus;
+        }
+        function sendMessage() {
+            var message = "成功~即時推給所有使用者 !";
+            var token = "1234";
+            webSocket.send(token);
+            //return message;9
+        }
+        // 透過伺服器傳送文字給所有使用者
+
+        function sendText() {
+            var msg = {
+                type: "message",
+                text: document.getElementById("text22").value,
+                id: clientID,
+                date: Date.now()
+            };
+            webSocket.send(JSON.stringify(msg));
+            document.getElementById("text22").value = "";
+        }
+
+
+    </script>
+    <script>
+        /*
+        (function () {
+            axios.defaults.baseURL = 'http://localhost:8765';
+            axios.defaults.headers.post['Content-Type'] = 'application/json;charset=utf-8';
+            axios.defaults.headers.post['Access-Control-Allow-Origin'] = '*';
+            axios.get("/YT_mybank/fido.do")
+                .then(resp => {
+                    const msg = resp.data;
+                    document.body.innerHTML = JSON.stringify(msg);
+                    console.log(resp);
+                })
+                .catch(error => {
+                    console.log(error);
+                });
+        })();
+        */
+    </script>
+
+</body>

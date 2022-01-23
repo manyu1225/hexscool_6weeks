@@ -3,6 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "proxy": {
+    "*": {
+      "target": "http://localhost:8087"
+    }
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "gulp build --env prod",
@@ -18,8 +23,10 @@
     "@babel/core": "^7.9.6",
     "@babel/preset-env": "^7.9.6",
     "autoprefixer": "^9.6.0",
+    "axios": "^0.24.0",
     "bootstrap": "^5.0.2",
     "browser-sync": "^2.26.7",
+    "cors": "^2.8.5",
     "ejs": "^3.1.2",
     "express": "^4.17.1",
     "gulp": "^4.0.2",

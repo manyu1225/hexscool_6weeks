@@ -413,8 +413,6 @@
                             form.fundTypeFlag.value = '5';
                             resetToInitialBySwitchingInvType();
                             resetToInitial();
-
-
                             getAlertTraceList();
 
                             $('#fundType5').addClass('on');
@@ -19302,9 +19300,7 @@
 
                         $('.errMsgDiv').attr("style", "display:none");
 
-
                         $('#btnSubmit').attr('style', '');
-
 
                         $('#ccyTypeFx').attr('style', 'display:');
                         $('#ccyTypeTw').attr('style', 'display:');
@@ -19531,7 +19527,7 @@
                                 <a href="#" class="sitemap_search_btn" onclick="NameSearch();"></a>
                             </div>
                         </h2>
-                        <div id="fundbuyFullDiv" style="">
+                        <div id="fundbuyFullDiv">
                             <div class="riskBox">
                                 <p id="kycLevelMsg" style="text-align:center;">您適合投資風險等級為RR1、RR2、RR3及RR4之商品</p>
                                 <div class="btn_icon inline">
@@ -19559,7 +19555,7 @@
                                             </div>
                                         </td>
                                     </tr>
-                                    <tr id="searchFund" style="">
+                                    <tr id="searchFund">
                                         <th><a id="queryFundNetByRwd" class="title_side linkIcon linkIcon_search"
                                                 onclick="queryFundNetValue();" style="cursor:pointer;"
                                                 rel="noopener noreferrer"><span>淨值查詢</span></a>
@@ -19583,7 +19579,7 @@
                                                 </div>
                                                 <div class="inputSwitcher_info"></div>
                                             </div>
-                                            <div id="searchFundSearchDiv" class="inputSwitcher botM" style="">
+                                            <div id="searchFundSearchDiv" class="inputSwitcher botM">
                                                 <div class="inputSwitcher_inner">
                                                     <div class="searchBox">
                                                         <input type="text" id="searchFundInput" name="searchFundInput">
@@ -19592,7 +19588,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div id="searchFundResultDiv" class="inputSwitcher botM" style="">
+                                            <div id="searchFundResultDiv" class="inputSwitcher botM">
                                                 <div class="inputSwitcher_inner">
                                                     <input type="text" id="selectFundToTitle" style="opacity:1;"
                                                         disabled="">
@@ -19815,7 +19811,7 @@
                                             </div>
                                         </td>
                                     </tr>
-                                    <tr id="singlePaymentTr" style="">
+                                    <tr id="singlePaymentTr">
                                         <th><span class="mustfill">*</span>扣款帳號</th>
                                         <td>
                                             <div class="inputSwitcher">
@@ -19835,8 +19831,8 @@
                                                         <input type="checkbox" id="singleAutoPayment"
                                                             name="singleAutoPayment">
                                                         <label for="singleAutoPayment"><span
-                                                                class="icon checkbox_blue"></span><span
-                                                                class="color_graydark">設定為預設扣款帳號</span></label>
+                                                                class="icon checkbox_blue"></span>
+                                                            <span class="color_graydark">設定為預設扣款帳號</span></label>
                                                     </p>
                                                 </div>
                                             </div>
@@ -20070,8 +20066,8 @@
                                                             name="deductNumberSp"></span>%</li>
                                                     <a id="deductLinkD" class="minusLink" style="display:none;"
                                                         href="javascript:void(0);" onclick="delDeductChange(this);"></a>
-                                                    <a id="deductLinkA" class="plusLink" style=""
-                                                        href="javascript:void(0);" onclick="setDeductChange(this);"></a>
+                                                    <a id="deductLinkA" class="plusLink" href="javascript:void(0);"
+                                                        onclick="setDeductChange(this);"></a>
                                                 </ul>
                                             </div>
                                             <div class="questWrap">
